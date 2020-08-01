@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/ahorro.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: -111px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.contenedor-form {
+    background: rgba(0,0,0,.7);
+    min-width: 550px;
+    max-width: 750px;
+    width: 100%;
+    margin: 48px auto;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+    /*padding: 40px;*/
+}
+@media(max-width: 750px){.contenedor-form{
+    max-width: 750px;
+}}
+
+.contenedor-form .toggle {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 200px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    border-top: 4px solid #931c32;
+    border-bottom: 4px solid #931c32;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form .toggle:hover {
+    border-top: 4px solid #0075d9;
+    border-bottom: 4px solid #0075d9;
+}
+
+.contenedor-form .toggle span {
+    letter-spacing: 1px;
+}
+
+.contenedor-form h2 {
+    margin: 0 0 28px 0;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1;
+    color:white;
+}
+
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"],
+select {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 7px solid #931c32;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight:normal;
+    background: #e8f0fe;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus,
+select:focus {
+    border-bottom: 4px solid #0075d9;
+    
+}
+select{
+    border-bottom: 7px solid #931c32;
+    color: #767676;
+}
+
+.contenedor-form input[type="submit"] {
+    background: #931c32;
+    color: #FFF;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="submit"]:hover {
+    background: rgba(0, 117, 217, 0.7);
+}
+
+.contenedor-form .reset-password {
+    background: rgba(0, 117, 217, .7);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.contenedor-form .reset-password a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contenedor-form .formulario {
+    display: none;
+    padding: 40px;
+}
+
+.contenedor-form .formulario:nth-child(2) {
+    display: block;
+}

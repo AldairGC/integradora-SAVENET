@@ -1,0 +1,41 @@
+input{
+    margin: .3rem;
+    display: flex;
+    justify-content: center;
+    padding: .3rem;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 2px 1px solid;
+    outline: none;
+    border: 1px solid;
+}
+@media(max-width: 734px){
+    input {
+        margin: .3rem;
+        display: flex;
+        justify-content: center;
+        padding: .3rem;
+        font-size: 16px;
+        cursor: pointer;
+        width: 97%;
+        border-radius: .2rem;
+        outline: none;
+        -moz-border-radius: 2.5em;
+    }
+    
+}
+.btn{
+    background-color: #333333;
+    color:white;
+    margin: .3rem;
+    display: flex;
+    justify-content: center;
+    padding: .3rem;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+    outline: none;
+    border-radius: .5em;   
+    border: 1px solid;
+}

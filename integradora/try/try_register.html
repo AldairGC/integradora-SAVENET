@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>try-register</title>
+    <link rel="stylesheet" href="../css/style.css">  
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/pogo-slider.min.css">
+</head>
+<body>
+    	<!-- LOADER -->
+        <div id="preloader">
+            <div class="loader">
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+         <!--end loader -->
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+        <!--login-->
+        <div class="formulario" style="display: none;">
+            <h2>Iniciar Sesión</h2>
+            <form action="../php/login.php" method="POST">
+                <input id="userName" name="userName" type="text" placeholder="Usuario" value =""required>
+                <input id="userPw" name="userPw" type="password" placeholder="Contraseña"value ="" required>
+                <input type="submit" value="Iniciar">
+            </form>
+        </div>
+        <!--register-->
+        <div class="formulario" style="display: block;">
+            <h2>Correo ya Registrado</h2>
+            <form action="../php/register.php" method="POST">
+                <input id="name" name="USER" type="text" placeholder="Usuario" value ="" required>                
+                <input id="pw" name="PW" type="password" placeholder="Contraseña" value ="" required>                
+                <input id="em" name="EMAIL" type="email" placeholder="Correo Electronico" value =""required>                             
+                <input type="submit"value="Registrar">
+            </form>
+        </div>
+    </div>
+    <script>alert("USUARIO O CRREO YA REGISTRADOS")</script>
+    <script src="../js/jquery-3.1.1.min.js"></script>    
+    <script src="../js/main.js"></script>
+    <!--loading-->
+    <script src="../js/custom.js"></script>
+</body>
+</html>

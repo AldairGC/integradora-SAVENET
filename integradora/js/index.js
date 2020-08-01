@@ -1,0 +1,1 @@
+ScrollReveal().revel('.container',{delay: 500});
